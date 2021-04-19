@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="ab" id="c1"><input type="text" name="ac" id="c2"><br>
+<button type="button" onclick="show()">A+</button>
+<button onclick="show1()">A-</button>
+<button onclick="show2()">Ax</button>
+<button onclick="show3()">A/</button></br>
+<span>resul = </span><span id="c3"></span>
+<script>
+    function show(){
+        let d=parseInt(document.getElementById("c1").value);
+        let e=parseInt(document.getElementById("c2").value);
+        let f=d+e
+document.getElementById("c3").innerText=(f)
+    }
+    function show1(){
+        let d=parseInt(document.getElementById("c1").value);
+        let e=parseInt(document.getElementById("c2").value);
+        let f=d-e
+        document.getElementById("c3").innerText=(f)
+    }
+    function show2(){
+        let d=parseInt(document.getElementById("c1").value);
+        let e=parseInt(document.getElementById("c2").value);
+        let f=d*e
+        document.getElementById("c3").innerText=(f)
+    }
+    function show3(){
+        let d=parseInt(document.getElementById("c1").value);
+        let e=parseInt(document.getElementById("c2").value);
+        let f=d/e
+        document.getElementById("c3").innerText=(f)
+    }
+
+</script>
+
+</body>
+</html>

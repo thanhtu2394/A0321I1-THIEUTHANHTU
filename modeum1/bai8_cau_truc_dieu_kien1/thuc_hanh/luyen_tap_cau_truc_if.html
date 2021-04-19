@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dn=prompt("tên đăng nhập")
+    if(dn=="Admin"){
+        let mk=prompt("mk")
+        if(mk=="TheMaster"){
+            alert("welcome");
+        }else if(mk==""){alert("cancel");
+        }else{
+            alert("wrongpassword")
+        }
+
+    }else if(dn==""){
+        alert("cancel");
+    }else{alert("i don't know you");
+    }
+
+
+</script>
+</body>
+</html>

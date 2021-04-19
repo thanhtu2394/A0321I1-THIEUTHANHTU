@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="ngay" id="c1">
+<button type="button" onclick="show()">tinh so ngay</button>
+<p id="c2">result</p>
+<script>
+    function show() {
+        let a=parseInt(document.getElementById("c1").value)
+        switch(a){
+            case 1:document.getElementById("c2").innerHTML="thang 1 co 30 ngày";break;
+            case 2:document.getElementById("c2").innerHTML="thang 2 co 28 ngày";break;
+            case 3:document.getElementById("c2").innerHTML="thang 3 co 30 ngày";break;
+            case 4:document.getElementById("c2").innerHTML="thang 4 co 30 ngày";break;
+            case 5:document.getElementById("c2").innerHTML="thang 5 co 30 ngày";break;
+            default:document.getElementById("c2").innerHTML="xxx";
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

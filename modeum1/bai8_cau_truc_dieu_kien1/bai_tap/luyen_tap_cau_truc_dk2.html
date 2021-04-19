@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai1
+    // let c=parseInt(prompt("do c"));
+    // let f=c*9/5+32
+    // document.write("do f =="+f)
+
+    //bai2
+    // let m=parseInt(prompt("m"));
+    // let f=m*3.2808
+    // document.write(" ft =="+f)
+
+    //bai3
+    // let a=parseInt(prompt("nhap canh a"));
+    // let s=a*2;
+    // document.write("s hv ==" +s)
+
+    //bai4
+
+    // let a=parseInt(prompt("chieu dai"));
+    // let b=parseInt(prompt("chieu rong"));
+    // let s=a*b
+    // document.write("dien tich hinh chu nhat ==" +s);
+
+    //bai5
+
+    // let a=parseInt(prompt("nhap canh a"));
+    // let b=parseInt(prompt("nhap canh b"));
+    // let s=(a*b)/2
+    // document.write("dien tich tam giac vuong" +s);
+
+    //bai6 ax+b=0
+    // let a=parseInt(prompt("nhap a"));
+    // let b=parseInt(prompt("nhap b"));
+    // let c=-b/a
+    // if(a==0){
+    //     document.write("pt vo n");
+    // }else if(b==0){
+    //     document.write("pt vsn n");
+    // }else{
+    //     document.write("pt co nghiem ==  " +c);
+    // }
+
+    //bai7 ax^2+bx+c=0
+    let a = parseInt(prompt("nhap a"));
+    let b = parseInt(prompt("nhap b"));
+    let c = parseInt(prompt("nhap c"));
+    let d = b ^ 2 - 4 * a * c;
+    let e=-c/b;
+    let f=(-b+Math.sprt(d))/2*a
+    if (a == 0) {
+        if (b == 0) {
+            document.write("pt vo n");
+        } else if (c == 0) {
+            document.write("pt vsn n");
+        } else {
+            document.write("pt co nghiem == " +e);
+        }
+
+    }else if(d>0){
+        document.write("x1 ="+f)
+    }
+
+
+</script>
+
+</body>
+</html>

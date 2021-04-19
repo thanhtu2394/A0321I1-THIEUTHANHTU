@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="text" name='date' id="c1">
+    <button type="button" onclick="show()">tra</button><br>
+    <span>result =</span> <span id="c2"></span>
+<script>
+    function show(){
+        let a=parseInt(document.getElementById("c1").value);
+        if(a%4==0&&a%100!=0){
+            document.getElementById("c2").innerText=("năm nhuần")
+        }else if( a%4==0&&a%400!=0){
+            document.getElementById("c2").innerText=("o phai năm nhuần")
+
+        }
+        if(a%4==0&&a%100==0&&a%400==0){
+            document.getElementById("c2").innerText=("năm nhuần")
+        }
+    }
+</script>
+
+</body>
+</html>

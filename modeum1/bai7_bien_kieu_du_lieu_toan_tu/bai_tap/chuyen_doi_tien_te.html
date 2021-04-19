@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<tr>
+    <td><label for="c1">Amount</label></td>
+    <td><label for="c2">From curency</label></td>
+    <td><label for="c3">To curenty</label></td>
+    <td></td>
+</tr>
+    <td><input type="text" name="amount" id="c1"></td>
+    <td>
+        <select id="c2">
+        <option name="w1"value="vn">việt nam</option>
+        <option name="w1"value="usd">american</option>
+        </select>
+    </td>
+    <td>
+        <select id="c3">
+            <option name="w2"value="usd">usd</option>
+            <option name="w2"value="vn">vnd</option>
+        </select>
+
+    </td>
+    <td><input type="button" onclick="show()" value="convert"</td>
+</table>
+<span>result=</span><span id="kq"></span>
+<script>
+    function show(){
+      let amount=document.getElementById("c1").value;
+      let from=document.getElementById("c2").value;
+      let to=document.getElementById("c3").value;
+      document.getElementById("kq").innerText=amount*23000;
+
+    }
+</script>
+
+
+</body>
+</html>

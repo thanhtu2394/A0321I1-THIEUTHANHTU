@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="width:150px;height:100px" cellpadding="48" >
+    <tr>
+        <td colspan="4"><input type="text" name="ab" id="cp" style="width:600px;height:80px"></td>
+    </tr>
+    <tr>
+        <td><button onclick="show1()" style="width: 50px;height:50px;">1</button></td>
+        <td><button onclick="show2()" style="width: 50px;height:50px;">2</button></td>
+        <td><button onclick="show3()"style="width: 50px;height:50px;">3</button></td>
+        <td><button onclick="show11()"style="width: 50px;height:50px;">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="show4()"style="width: 50px;height:50px;">4</button></td>
+        <td><button onclick="show5()"style="width: 50px;height:50px;">5</button></td>
+        <td><button onclick="show6()"style="width: 50px;height:50px;">6</button></td>
+        <td><button onclick="show12()"style="width: 50px;height:50px;">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="show7()"style="width: 50px;height:50px;">7</button></td>
+        <td><button onclick="show8()"style="width: 50px;height:50px;">8</button></td>
+        <td><button onclick="show9()"style="width: 50px;height:50px;">9</button></td>
+        <td><button onclick="showx()"style="width: 50px;height:50px;">*</button></td>
+    </tr><tr>
+        <td><button onclick="showc()"style="width: 50px;height:50px;">c</button></td>
+        <td><button onclick="show0()"style="width: 50px;height:50px;">0</button></td>
+        <td><button onclick="show14()"style="width: 50px;height:50px;">=</button></td>
+        <td><button onclick="show13()"style="width: 50px;height:50px;">/</button></td>
+    </tr>
+</table>
+<script>
+    function show1(){
+        document.getElementById("cp").value += "1";
+    }
+    function show2(){
+        document.getElementById("cp").value += "2";
+    }
+    function show3(){
+        document.getElementById("cp").value += "3";
+    }
+    function show4(){
+        document.getElementById("cp").value += "4";
+    }
+    function show5(){
+        document.getElementById("cp").value += "5";
+    }
+    function show6(){
+        document.getElementById("cp").value += "6";
+    }
+    function show7(){
+        document.getElementById("cp").value += "7";
+    }
+    function show8(){
+        document.getElementById("cp").value += "8";
+    }
+    function show9(){
+        document.getElementById("cp").value += "9";
+    }
+    function show0(){
+        document.getElementById("cp").value += "0";
+    }
+    function show11(){
+        document.getElementById("cp").value += "+";
+    }
+    function show12(){
+        document.getElementById("cp").value += "-";
+    }
+    function showx(){
+        document.getElementById("cp").value += "*";
+    }
+    function show13(){
+        document.getElementById("cp").value += "/";
+    }
+    function showc(){
+        let a=document.getElementById("cp").value;
+        document.getElementById("cp").value=a.slice(0,a.length-1) //a.lenggth-1 :chiều dài của chuỗi
+
+    }
+    function show14(){
+         document.getElementById("cp").value=eval(document.getElementById("cp").value) //eval():tính phép toán chuỗi
+    }
+
+</script>
+
+</body>
+</html>
