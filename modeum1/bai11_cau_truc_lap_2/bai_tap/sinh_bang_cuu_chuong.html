@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "<table border='1' cellspacing='5px'>";
+    let i = 1;
+    let j = 2;
+
+    while (i < 10) {
+        a = a + "<tr>";
+        while (j <= 9) {
+            let z = i*j;
+            a = a + "<td>" +j+"x"+i+"="+z + "</td>";
+            j++;
+        }
+        a = a + "</tr>";//j=9
+        j=2;
+        i++;
+    }
+    a = a + "</table>";
+    document.write(a)
+</script>
+
+</body>
+</html>

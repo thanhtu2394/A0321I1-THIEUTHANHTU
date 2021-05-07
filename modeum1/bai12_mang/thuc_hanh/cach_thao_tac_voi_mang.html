@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<label for="c3"><h1>Sample screen :</h1></label>
+<input type="text" id="c3">
+<button type="button" id="c1" value="add" onclick="show()">add</button>
+<button type="button" id="c2" value="dislay" onclick="show1()">dislay</button>
+<script>
+    let x = 0;
+    let myArray = Array();
+
+    function show() {
+        myArray[x] = document.getElementById("c3").value;
+        x++;
+        document.getElementById("c3").value = "";
+    }
+
+    function show1() {
+        for (let i = 0; i < myArray.length; i++) {
+            document.write(myArray[i] + "<br>");
+        }
+    }
+
+</script>
+
+
+</body>
+
+</html>

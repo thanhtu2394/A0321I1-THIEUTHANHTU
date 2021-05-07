@@ -51,21 +51,62 @@
     let a = parseInt(prompt("nhap a"));
     let b = parseInt(prompt("nhap b"));
     let c = parseInt(prompt("nhap c"));
-    let d = b ^ 2 - 4 * a * c;
-    let e=-c/b;
-    let f=(-b+Math.sprt(d))/2*a
-    if (a == 0) {
-        if (b == 0) {
-            document.write("pt vo n");
-        } else if (c == 0) {
-            document.write("pt vsn n");
-        } else {
-            document.write("pt co nghiem == " +e);
-        }
+    let d = (b ^ 2) - (4 * a * c);
+    let e = -c / b;
+    let f = (-b + Math.sqrt(d)) / (2 * a)
+    // let f1 = (-b - Math.sprt(d)) / (2 * a)
+    // let f2 = -b / 2 * a
+    // if (a == 0) {
+    //     if (b == 0) {
+    //         document.write("pt vo n");
+    //     } else if (c == 0) {
+    //         document.write("pt vsn n");
+    //     } else {
+    //         document.write("pt co nghiem == " + e);
+    //     }
+    //
+    // } else if (d > 0) {
+    //     document.write("x1 =" + f)
+    //     document.write("x2 =" + f1)
+    // } else if (d == 0) {
+    //     document.write("pt co nghiem kep x==" + f2)
+    // } else {
+    //     document.write("pt vo nghiem")
+    // }
+    // document.write(d)
+    // document.write(e)
+    document.write(f)
+    // document.write(f1)
+    // document.write(f2)
 
-    }else if(d>0){
-        document.write("x1 ="+f)
-    }
+
+    //bai8
+
+   //  let a = parseInt(prompt("so tuoi"));
+   // switch (a) {
+   //     case 10:document.write("tuoi cua a");break;
+   //     case 20:document.write("tuoi cua b");break;
+   //     case 30:document.write("tuoi cua c");brea;
+   //     default :document.write("......")
+   // }
+
+
+    //bai9
+    //
+    // let a=parseInt(prompt("canh a"));
+    // let b=parseInt(prompt("canh b"));
+    // let c=parseInt(prompt("canh c"));
+    // if(a,b,c>0&&a+b>c&&b+c>a&&a+c>b){
+    //     document.write("abc la 3 canh tam giac");
+    // }
+
+    //bai10
+
+    // let a=parseInt(prompt("so dien nang tieu thu"));
+    // let b=a*2000
+    // let c=a*3000
+    // if(a<10000){document.write("gia dien ="+b);
+    // }else{document.write("gia dien ="+c);}
 
 
 </script>
