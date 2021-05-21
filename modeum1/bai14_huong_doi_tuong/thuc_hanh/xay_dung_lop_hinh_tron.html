@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const pi=3.14;
+    class circle{
+        constructor(radius,color) {
+            this.radius=radius;
+            this.color=color;
+        }
+        getradius(){
+            return this.radius;
+        }
+        getarea(){
+            let S=pi*this.radius*this.radius;
+            return S;
+        }
+    }
+    let bk=new circle(3);
+    let bk1=new circle(4);
+    let bk2=new circle(5);
+    alert(bk.getarea());
+    alert(bk1.getarea());
+    alert(bk2.getarea());
+</script>
+
+</body>
+</html>

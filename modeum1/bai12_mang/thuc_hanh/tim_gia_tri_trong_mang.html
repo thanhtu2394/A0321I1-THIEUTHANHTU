@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="c1">
+<button type="button" onclick="show()">tim kiem</button>
+<script>
+    let a=[1,3,4,5,6,7,8,9,12,12];
+    function show(){
+        let b=document.getElementById('c1').value;
+        for(i=0;i<a.length;i++){
+            if(b==a[i]){
+                document.write('vi tri cua a ' +i);
+                break;
+            }
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html>

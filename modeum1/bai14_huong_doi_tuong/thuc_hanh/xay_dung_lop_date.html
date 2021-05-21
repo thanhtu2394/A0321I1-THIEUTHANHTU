@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class date{
+        constructor(ngay,thang,nam) {
+            this.ngay=ngay;
+            this.thang=thang;
+            this.nam=nam;
+        }
+        getngay(){
+            return this.ngay;
+        }
+        getthang(){
+            return this.thang;
+        }
+        getnam(){
+            return this.nam;
+        }
+        setngay(ngay){
+            this.ngay=ngay;
+        }
+        setthang(thang){
+            this.thang=thang;
+        }
+        setnam(nam){
+            this.nam=nam;
+        }
+        tostring(){
+            return this.ngay+"/"+this.thang+"/"+this.nam;
+        }
+    }
+    let datenew=new date(12,12,2021);
+    // let ngay=datenew.getngay();
+    // let thang=datenew.getthang();
+    // let nam=datenew.getnam();
+    // alert(ngay+"/"+thang+"/"+nam);
+    // datenew.setngay(2);
+    // datenew.setthang(2);
+    // datenew.setnam(2023);
+    // let ngay=datenew.getngay();
+    // let thang=datenew.getthang();
+    // let nam=datenew.getnam();
+    // alert(ngay+"/"+thang+"/"+nam);
+    alert(datenew.tostring());
+</script>
+</body>
+</html>

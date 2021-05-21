@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>type a value f->c</h1>
+<label for="c1">Fahrenheit</label>
+<input id="c1"type="text" name="f">
+<p>Celcius: <span id="c2"></span></p>
+<input type="button" id="c3" value="add" onclick="convert()">
+<script>
+    function convert() {
+        let c=parseInt(document.getElementById("c1").value);
+        let b=(c-32)/1.8
+        document.getElementById("c2").innerHTML=b;
+    }
+</script>
+
+
+</body>
+</html>

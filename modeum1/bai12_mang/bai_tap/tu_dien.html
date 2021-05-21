@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="c1">
+<button type="button" onclick="show()">tracuu</button>
+<p>resutl :<span id="c2"></span></p>
+<script>
+    let arr1=["hello","goodbye","see"];
+    let arr2=["chao","tambiet","nhin"];
+    function show() {
+        let b=document.getElementById('c1').value;
+        for(i=0;i<arr1.length;i++){
+            if(b==arr1[i]){
+                document.getElementById('c2').innerHTML=arr2[i];
+                document.getElementById('c1').value="";
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
