@@ -5,60 +5,146 @@
     <title>Title</title>
 </head>
 <body>
+<!--<script>-->
+<!--    //bai1-->
+<!--    // let a=0;-->
+<!--    // let arr=[12,13,342,23,1,3,4,5,6,23];-->
+<!--    // for (i=0;i<arr.length;i++){-->
+<!--    //     if(arr[i]>=10){-->
+<!--    //         a++;-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // document.write("cac so nguyen lon hon 10 trong mang ="+a);-->
+
+<!--    //bai2-->
+<!--    // let arr=[12,43,23,13,65,45,76,46,3,5];-->
+<!--    // let max=arr[0];-->
+<!--    // let index=0;-->
+<!--    // for(i=0;i<arr.length;i++){-->
+<!--    //     if(arr[i]>max){-->
+<!--    //         max=arr[i];-->
+<!--    //         index=i;-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // // for(j=0;j<arr.length;j++){-->
+<!--    // //     if(max==arr[j]){-->
+<!--    // //         document.write("vi tri so nguyen trong mang ="+j+"<br>");-->
+<!--    // //         break;-->
+<!--    // //     }-->
+<!--    // // }-->
+<!--    // document.write("so nguyen lon nhat ="+max+"<br>"+"vi tri trong mang="+index);-->
+
+
+<!--    -->
+<!--    //bai 3-->
+
+<!--    // let arr=[12,43,23,13,65,45,76,46,3,5];-->
+<!--    // let max=arr[0];-->
+<!--    // let index=0;-->
+<!--    // let tong=0;-->
+<!--    // let tb=0;-->
+<!--    // for(i=0;i<arr.length;i++){-->
+<!--    //     if(arr[i]>max){-->
+<!--    //         max=arr[i];-->
+<!--    //         index=i;-->
+<!--    //     }-->
+<!--    //     tong+=arr[i];-->
+<!--    //     tb=tong/arr.length;-->
+<!--    // }-->
+<!--    // document.write("so nguyen lon nhat ="+max+"<br>"+"vi tri trong mang="+index+"<br>");-->
+<!--    // document.write("tb cac so trong mang ="+tb);-->
+<!--    -->
+<!--    -->
+<!--</script>-->
+
+
+<!--bai4-->
+<!--<input type="text" id="c1" ><button type="button" onclick="show()">add</button>-->
+<!--<button onclick="show1()">show</button>-->
+<!--<script>-->
+<!--    let arr=new Array();-->
+<!--    let x=0;-->
+<!--    function show() {-->
+<!--        arr[x]=document.getElementById('c1').value;-->
+<!--        document.getElementById('c1').value="";-->
+<!--        x++;-->
+<!--    }-->
+<!--function show1() {-->
+<!--       document.write(arr.reverse());-->
+<!--}-->
+<!--</script>-->
+
+
 <script>
-    //bai1
-    // let a=0;
-    // let arr=[12,13,342,23,1,3,4,5,6,23];
-    // for (i=0;i<arr.length;i++){
-    //     if(arr[i]>=10){
-    //         a++;
-    //     }
-    // }
-    // document.write("cac so nguyen lon hon 10 trong mang ="+a);
-
-    //bai2
-    // let arr=[12,43,23,13,65,45,76,46,3,5];
-    // let max=arr[0];
+    //bai5
+    // let a=[12,2,4,5,-4,-10,23,-8,-12,21];
     // let index=0;
-    // for(i=0;i<arr.length;i++){
-    //     if(arr[i]>max){
-    //         max=arr[i];
-    //         index=i;
+    // for(i=0;i<a.length;i++){
+    //     if(a[i]<0){
+    //         index++;
     //     }
     // }
-    // // for(j=0;j<arr.length;j++){
-    // //     if(max==arr[j]){
-    // //         document.write("vi tri so nguyen trong mang ="+j+"<br>");
-    // //         break;
-    // //     }
-    // // }
-    // document.write("so nguyen lon nhat ="+max+"<br>"+"vi tri trong mang="+index);
+    // document.write(index);
 
-
-    
-    //bai 3
-
-    // let arr=[12,43,23,13,65,45,76,46,3,5];
-    // let max=arr[0];
-    // let index=0;
-    // let tong=0;
-    // let tb=0;
-    // for(i=0;i<arr.length;i++){
-    //     if(arr[i]>max){
-    //         max=arr[i];
-    //         index=i;
+    //bai6
+    //  let arr= new Array();
+    //  for(i=0;i<10;i++){
+    //      arr[i]=parseInt(prompt("nhap so cho mang"));
+    //  }
+    //   let v=parseInt(prompt("nhap so nguye"));
+    //  let check=true;
+    // for(j=0;j<arr.length;j++){
+    //     if(v==arr[j]){
+    //         document.write("v is in the array");
+    //         break;
+    //     }else{
+    //         check=false;
     //     }
-    //     tong+=arr[i];
-    //     tb=tong/arr.length;
     // }
-    // document.write("so nguyen lon nhat ="+max+"<br>"+"vi tri trong mang="+index+"<br>");
-    // document.write("tb cac so trong mang ="+tb);
+    // if(!check){
+    //     document.write("v is not in the array");
+    // }
 
 
-    //bai4;
-    let arr=[parseInt(prompt())]
-    console.log(arr);
+    //bai7
+
+    //  let arr= new Array();
+    //  for(i=0;i<10;i++){
+    //      arr[i]=parseInt(prompt("nhap so cho mang"));
+    //  }
+    //   let v=parseInt(prompt("nhap so nguye"));
+    // for(j=0;j<arr.length;j++){
+    //     if(v==arr[j]){
+    //         arr.splice(j,1);
+    //         break;
+    //     }
+    // }
+    // document.write(arr+"<br>");
+    // document.write(arr.length);
+
+    //bai8
+    //
+    //      let arr= new Array();
+    //      for(i=0;i<10;i++){
+    //          arr[i]=parseInt(prompt("nhap so cho mang"));
+    //      }
+    //      arr.sort(function (a,b) {
+    // return b-a;
+    //      });
+    //     document.write(arr);
+
+    //bai9
+
+    // let arr = new Array();
+    // let arr1= new Array();
+    // let arr2=[1,2,3,4,5,6,7,8,9,0,12,14,15,13,16,17,18];
+    // for (i = 0; i < 10; i++) {
+    //     arr[i] = parseInt(prompt("nhap so cho mang 1"));
+    //     arr1[i] = parseInt(prompt("nhap so cho mang 2"));
+    // }
+    // document.write(arr2.concat(arr,arr1));
+
+
 </script>
-
 </body>
 </html>

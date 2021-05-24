@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="c1" width="200" height="100" style="border: 1px solid #FF0000"></canvas>
+<script>
+    class Rectangle{
+        constructor(dai,rong) {
+            this.dai=dai;
+            this.rong=rong
+        }
+        getdai(){
+            return this.dai;
+        }
+        getrong(){
+            return this.rong;
+        }
+        dientich(){
+            let s=this.dai*this.rong;
+            return s;
+        }
+        chuvi(){
+            let c=(this.dai+this.rong)*2;
+            return c;
+        }
+        hienthi(){
+            var c = document.getElementById("c1");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(50,20,this.dai,this.rong);
+        }
+        setdai(x){
+            this.dai=x;
+        }
+        setrong(y){
+            this.rong=y;
+        }
+
+    }
+    let hcn=new Rectangle(5,4);
+    document.write(hcn.hienthi())
+    hcn.setdai(50);
+    document.write(hcn.hienthi())
+    document.write(hcn.dientich());
+    document.write(hcn.chuvi());
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
