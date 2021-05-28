@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperarute{
+        constructor(c) {
+            this.c=c;
+        }
+        chuyenDoiSangF (){
+            return this.c * 9/5 + 32;
+        }
+        chuyenDoiSangK(){
+            return this.c + 273.15;
+        }
+    }
+    let a=new temperarute(25);
+    document.write("do c ==>f ="+a.chuyenDoiSangF()+"<br>");
+    document.write("do c ==>k ="+a.chuyenDoiSangK());
+
+
+</script>
+
+</body>
+</html>

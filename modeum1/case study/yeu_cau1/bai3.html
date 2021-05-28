@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = 4;
+    let h1 = 4;
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 9; j++) {
+            if (h <= j &&j <=h1) {
+                document.write("x");
+            } else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        h--;
+        h1++;
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
