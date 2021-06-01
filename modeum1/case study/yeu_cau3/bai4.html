@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=[0,1,2,3,4,5,6,7,8,9];
+    let string=["khong","mot","hai","ba","bon","nam","sau","bay","tam","chin"];
+    let a=prompt("nhap so can nhap");
+    let arr=a.split("");
+    let xxx="";
+    console.log(arr);
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<number.length;j++){
+            if (arr[i]==number[j]){
+                xxx+=string[j];
+                break;
+            }
+        }
+    }
+    document.write(xxx);
+</script>
+</body>
+</html>

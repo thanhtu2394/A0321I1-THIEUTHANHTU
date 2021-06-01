@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập xâu kí tự: ");
+    document.write("xâu kí tự trước khi chuẩn hóa : " + a + "<br>");
+    arr = a.split(" ");
+    arrNew = [];
+
+for (i=0;i<arr.length;i++){
+    for (j=0;j<arr[i].length;j++){
+        if(j===0){
+            arrNew.push(arr[i][j].toUpperCase());
+        }else{
+            arrNew.push(arr[i][j].toLowerCase());
+        }
+    }
+    arrNew.push(" ");
+}
+document.write("sau khi xau duoc chuan hoa" +arrNew.join(""));
+console.log(arrNew.join("").split(" "));
+let arr1=arrNew.join("").split(" ");
+   let max=arr1[0].length;
+   let index=0;
+   for(i=1;i<arr1.length;i++){
+       if(arr1[i].length>max){
+           max=arr1[i].length;
+           index=i;
+       }
+   }
+   document.write("xau co chu dai nhat    " +arr1[index]);
+
+</script>
+
+</body>
+</html>

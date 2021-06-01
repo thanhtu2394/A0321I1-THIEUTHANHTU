@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[1,2,423,52,25,23,4,642,742342,12,123,9];
+    let b=[12,213,41,123,413,3561,212,12,3,5,2,4];
+    let max=a[0]/b[0];
+    let index=0;
+    for(i=0;i<a.length;i++){
+        if(max<=a[i]/b[i]){
+            max=a[i]/b[i];
+            index=i;
+        }
+
+    }
+document.write("chi so phan tu lon nhat trong mang"+index);
+</script>
+</body>
+</html>

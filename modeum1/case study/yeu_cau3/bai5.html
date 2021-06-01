@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>1.huda</p>
+<p>2.heniken</p>
+<p>3.larue</p>
+<p>4.SG</p>
+<p>5.Hn</p>
+<p>6.stronbow</p>
+<p>7.corona</p>
+<button type="button" onclick="chonMon()">chon</button>
+<script>
+    function chonMon() {
+        tong = 0;
+        tong1 = 0;
+        do {
+            let a = parseInt(prompt("chọn mon bạn thích từ 1=>7"+"<br>"+"bấm 8 để hủy"));
+            switch (a) {
+                case 1 :
+                    alert("huda = 1000");
+                    let b = parseInt(prompt("SL bạn cân :"));
+                    tong = 1000 * b;
+                    tong1 += tong;
+                    break;
+                case 2 :
+                    alert("heniken=1200");
+                    let b1 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1200 * b1;
+                    tong1 += tong;
+                    break;
+                case 3 :
+                    alert("larue=1300");
+                    let b2 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1300 * b2;
+                    tong1 += tong;
+                    break;
+                case 4 :
+                    alert("SG=1400");
+                    let b3 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1400 * b3;
+                    tong1 += tong;
+                    break;
+                case 5 :
+                    alert("hn=1500");
+                    let b4 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1500 * b4;
+                    tong1 += tong;
+                    break;
+                case 6 :
+                    alert();
+                    let b5 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1000 * b5;
+                    tong1 += tong;
+                    break;
+                case 7 :
+                    alert();
+                    let b6 = parseInt(prompt("SL bạn cân :"));
+                    tong = 1000 * b6;
+                    tong1 += tong;
+                    break;
+                default :
+                    alert("không có hoặc hết hàng");
+            }
+        } while (a != 8);
+        document.write(tong1);
+    }
+</script>
+</body>
+
+</html>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>cafe</th>-->
+<!--        <th id="c1"> gia</th>-->
+<!--        <th> <button type="button" onclick="chonmon(1)">chon</button></th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>cam vat</td>-->
+<!--        <td id="c2"> gia</td>-->
+<!--        <td> <button type="button" onclick="chonmon(2)">chon</button></td>-->
+<!--    </tr> <tr>-->
+<!--    <td>nuoc ep chanh</td>-->
+<!--    <td id="c3"> gia</td>-->
+<!--    <td> <button type="button" onclick="chonmon(3)">chon</button></td>-->
+<!--</tr>-->
+
+<!--</table>-->
+<!--<script>-->
+<!--    function chonmon(x) {-->
+<!--        switch (x) {-->
+<!--            case 1 : document.getElementById("c1").innerText=15.000;break;-->
+<!--            case 2 : document.getElementById("c1").innerText=24.000;break;-->
+<!--            case 3 : document.getElementById("c1").innerText=55.000;break;-->
+
+<!--        }-->
+
+<!--    }-->
+<!--</script>-->

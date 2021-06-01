@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [12, 23, 25, 23, 152, 45, 27, 345, 745, 73];
+    let b = [23, 43, 65, 12, 3, 65, 45, 73, 213, 524, 56, 234, 73, 234,];
+    let c = [];
+    for (i = 0; i < b.length; i++) {
+        let index = 0;
+        for (j = 0; j < a.length; j++) {
+            if (b[i] == a[j]) {
+                index++;
+            }
+        }
+        if (index == 0 && c.indexOf(b[i])===-1) {
+            c.push(b[i]);
+        }
+    }
+    document.write("phan tu cua mang c="+c);
+</script>
+
+</body>
+</html>
