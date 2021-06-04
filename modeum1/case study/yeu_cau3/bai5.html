@@ -17,8 +17,10 @@
     function chonMon() {
         tong = 0;
         tong1 = 0;
+        // let check = true;
+        // let a ;
         do {
-            let a = parseInt(prompt("chọn mon bạn thích từ 1=>7"+"<br>"+"bấm 8 để hủy"));
+           var a = parseInt(prompt("chọn mon bạn thích từ 1=>7" + "<br>" + "bấm 8 để hủy"));
             switch (a) {
                 case 1 :
                     alert("huda = 1000");
@@ -62,10 +64,13 @@
                     tong = 1000 * b6;
                     tong1 += tong;
                     break;
+                // case 8: check=false;
+                // break;
+
                 default :
                     alert("không có hoặc hết hàng");
             }
-        } while (a != 8);
+        } while (a!=8);
         document.write(tong1);
     }
 </script>

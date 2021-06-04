@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("nhap noi dung").split("");//th
+    let b=prompt("nhap noi dung1").split(""); //anh
+    let c=[];
+    for(i=0;i<a.length;i++){
+        for(j=0;j<b.length;j++){
+            if(a[i]==b[j]){
+                c.push(b[j]);
+                b.splice(j,1);
+                break;
+            }
+        }
+    }
+    document.write(c.join(""));
+
+</script>
+
+</body>
+</html>
