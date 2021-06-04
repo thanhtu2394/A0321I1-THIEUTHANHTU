@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m=parseInt(prompt("nhap chieu dai cua mang"));
+    let n=parseInt(prompt("nhap chieu rong cua mang"));
+    let arr=new Array(m);
+    let max=0;//3578
+    let min;
+    for(i=0;i<arr.length;i++) {
+        arr[i] = new Array(n);
+        for (j = 0; j < arr[i].length; j++) {
+            arr[i][j] = parseInt(prompt("nhap mang arr[" + i + "][" + j + "]"));
+            min=arr[0][0];
+            if(arr[i][j]>max){
+                max=arr[i][j];
+            }
+            if (arr[i][j]<=min){
+                min=arr[i][j];
+            }
+        }
+    }
+    console.log(max);
+    console.log(min);
+    console.log(arr);
+</script>
+
+</body>
+</html>
