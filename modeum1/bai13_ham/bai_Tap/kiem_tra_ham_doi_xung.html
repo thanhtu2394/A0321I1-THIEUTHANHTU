@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let y = length - 1;
+    let check=true;
+    let b=prompt("nhap tu can tra")
+    function kiemtra(a) {
+        let c = a;
+        for (i = 0; i < (a.length)/2; i++, y--) {
+            if (a[i]==c[c.y]) {
+                console.log("ok")
+                check = true;
+            } else {
+                check = false;
+                break;
+            }
+        }
+        if (check == true) {
+            document.write("" + a + "la ki tu pro")
+        }
+    }
+   kiemtra(b);
+</script>
+</body>
+</html>
