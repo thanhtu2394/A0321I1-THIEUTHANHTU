@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra() {
+        let tongUoc = 0;
+        let a = parseInt(prompt("nhap nguyen duong can kiem tra"));
+        if (a > 0) {
+            for (i = 0; i < a - 1; i++) {
+                if (a % i == 0) {
+                    tongUoc += i;
+                }
+            }
+            if (a == tongUoc) {
+                return check = true;
+            } else {
+                return check = false;
+            }
+        } else {
+            return "ko hop le"
+        }
+    }
+
+    let a = kiemTra();
+    console.log("day co phai so hoan hao khong : " + a);
+
+</script>
+
+</body>
+</html>

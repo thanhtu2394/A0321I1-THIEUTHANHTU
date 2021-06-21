@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="c1">
+<button type="button" onclick="themMoi()">them moi</button>;
+<div id="c2"></div>;
+<!--<table border="1px solid green">-->
+<!--    <tr>-->
+<!--        <th>stt</th>-->
+<!--        <th>tensanpahm</th>-->
+<!--        <th>sua</th>-->
+<!--        <th>xoa</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>stt</td>-->
+<!--        <td>tensanpahm</td>-->
+<!--        <td>sua</td>-->
+<!--        <td>xoa</td>-->
+<!--    </tr>-->
+<!--</table>-->
+</body>
+<script>
+    let arr=[];
+    hienThi(arr);
+    function themMoi() {
+        let a=document.getElementById("c1").value;
+        arr.push(a);
+        document.getElementById("c1").value="";
+        hienThi(arr);
+
+    }
+    function hienThi(list) {
+        let table="<table border=\"1px solid green\">\n" +
+            "    <tr>\n" +
+            "        <th>stt</th>\n" +
+            "        <th>tensanpahm</th>\n" +
+            "        <th>sua</th>\n" +
+            "        <th>xoa</th>\n" +
+            "    </tr>";
+        for(i=0;i<list.length;i++){
+            table+=" <tr>\n" +
+                "        <td>"+(i+1)+"</td>\n" +
+                "        <td>"+list[i]+"</td>\n" +
+                "        <td><button onclick='xoa("+i+")'>xoa</button></td>\n" +
+                "        <td><button onclick='sua("+i+")'>sua</button></td>\n" +
+                "    </tr>"
+        }
+        table+="</table>";
+document.getElementById("c2").innerHTML=table;
+    }
+    function sua(index) {
+        let a=prompt("sua");
+    arr[index]=a;
+    hienThi(arr);
+    }
+    function xoa(index) {
+        arr.splice(index,1);
+        hienThi(arr);
+
+    }
+</script>
+</html>

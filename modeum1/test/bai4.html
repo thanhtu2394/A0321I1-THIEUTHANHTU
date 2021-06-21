@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Quản lý công nhân</h1>
+<div id="c1"></div>
+
+<script>
+    class quanly {
+        constructor(ten, ngaysinh,diachi, luong, chucvu) {
+            this.ten = ten;
+            this.ngaysinh = ngaysinh;
+            this.diachi=diachi;
+            this.luong = luong;
+            this.chucvu = chucvu;
+        }
+
+        getten() {
+            return this.ten;
+        }
+
+        getngaysinh() {
+            return this.ngaysinh;
+        }
+
+        getluong() {
+            return this.luong;
+        }
+
+        getchucvu() {
+            return this.chucvu;
+        }
+
+        getdiachi() {
+            return this.diachi;
+        }
+    }
+
+    let arr = [];
+    let a = new quanly("nguyenvana", "21 / 12","nbb", "12121", "abc");
+    let b = new quanly("nguyenvanb", "21 / 12","nbb", "12121", "abc");
+    let c = new quanly("nguyenvanc", "21 / 12","nbb", "12121", "abc");
+    let d = new quanly("nguyenvand", "21 / 12","nbb", "12121", "abc");
+    arr.push(a);
+    arr.push(b);
+    arr.push(c);
+    arr.push(d);
+    hienThi(arr);
+
+
+    function hienThi(list) {
+        let table = "<table border=\"1px solid green\">\n" +
+            "    <tr>\n" +
+            "        <th>STT</th>\n" +
+            "        <th>HỌ VÀ TÊN</th>\n" +
+            "        <th>NGÀY SINH</th>\n" +
+            "        <th>ĐỊA CHỈ</th>\n" +
+            "        <th>LƯƠNG</th>\n" +
+            "        <th>CHỨC VỤ</th>\n" +
+            "    </tr>";
+        for (i = 0; i < list.length; i++) {
+            table += " <tr>\n" +
+                "        <td>" + (i + 1) + "</td>\n" +
+                "        <td>" + list[i].getten() + "</td>\n" +
+                "        <td>" + list[i].getngaysinh() + " </td>\n" +
+                "        <td>" + list[i].getdiachi() + "</td>\n" +
+                "        <td>" + list[i].getluong() + "</td>\n" +
+                "        <td>" + list[i].getchucvu() + "</td>\n" +
+                "    </tr>"
+        }
+        table += "</table>";
+        document.getElementById("c1").innerHTML = table;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(4);
+    let tong = 0;
+    let index = 0;
+
+    for (i = 0; i < arr.length; i++) {
+        let a = parseInt(prompt("them so vao mang"));
+        if (a % 3 == 0) {
+            tong += a;
+            index++;
+        }
+        arr[i]=a;
+    }
+    console.log(arr);
+    console.log("tong tb cong cac so chia het cho 3 =="+tong/index)
+
+
+
+</script>
+
+</body>
+</html>
